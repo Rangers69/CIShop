@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Checkout Success - CIShop</title>
+    <title>Orders - CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
@@ -83,31 +83,69 @@
 
     <main role="main" class="container">
         <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                  <div class="card-header">
-                      Checkout Berhasil
-                  </div>
-                  <div class="card-body">
-                      <h5>Nomor Order: 09799079</h5>
-                      <p>Terima Kasih, Sudah Berbelanja</p>
-                      <p>Silahkan melakukan pembayaran untuk bisa kami proses selanjutnya dengan cara:</p>
-                      <ol>
-                          <li>Lakukan pembayaran pada rekening <strong>BCA 7089088723</strong> a/n PT.CIShop</li>
-                          <li>Sertakan Keterangan dengan nomor order: <strong>08009709</strong></li>
-                          <li>Total pembayaran: <strong>Rp 300.000,-</strong></li>
-                          <p>Jika sudah, Silahkan kirimkan bukti transfer di halaman konfirmasi atau bisa <a href="/orders-detail.html">Klik</a></p>
-                          <a href="/index.html" class="btn btn-primary"><i class="fas fa-angle-left"></i>Kembali</a>
-                      </ol>
-                  </div>
-              </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Menu
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="/profile.html">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/orders.html">Orders</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        Daftar Orders
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nomor</th>
+                                    <th>Tanggal</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="/orders-detail.html"><strong>097907097</strong></a></td>
+                                    <td>2019/05/02</td>
+                                    <td>Rp 300.000,-</td>
+                                    <td>
+                                        <span class="badge badge-pill badge-warning">Menunggu pembayaran</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/orders-detail.html"><strong>097907097</strong></a></td>
+                                    <td>2019/05/19</td>
+                                    <td>Rp 300.000,-</td>
+                                    <td>
+                                        <span class="badge badge-pill badge-success">Dikirim</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/orders-detail.html"><strong>097907097</strong></a></td>
+                                    <td>2019/05/10</td>
+                                    <td>Rp 300.000,-</td>
+                                    <td>
+                                        <span class="badge badge-pill badge-danger">Dibatalkan</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
-
     <script src="/assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="/assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

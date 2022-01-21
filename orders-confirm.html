@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Checkout Success - CIShop</title>
+    <title>Konfirmasi Order - CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
@@ -83,29 +83,62 @@
 
     <main role="main" class="container">
         <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                  <div class="card-header">
-                      Checkout Berhasil
-                  </div>
-                  <div class="card-body">
-                      <h5>Nomor Order: 09799079</h5>
-                      <p>Terima Kasih, Sudah Berbelanja</p>
-                      <p>Silahkan melakukan pembayaran untuk bisa kami proses selanjutnya dengan cara:</p>
-                      <ol>
-                          <li>Lakukan pembayaran pada rekening <strong>BCA 7089088723</strong> a/n PT.CIShop</li>
-                          <li>Sertakan Keterangan dengan nomor order: <strong>08009709</strong></li>
-                          <li>Total pembayaran: <strong>Rp 300.000,-</strong></li>
-                          <p>Jika sudah, Silahkan kirimkan bukti transfer di halaman konfirmasi atau bisa <a href="/orders-detail.html">Klik</a></p>
-                          <a href="/index.html" class="btn btn-primary"><i class="fas fa-angle-left"></i>Kembali</a>
-                      </ol>
-                  </div>
-              </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Menu
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="/profile.html">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/orders.html">Orders</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        Konfirmasi Order #099780709
+                        <div class="float-right">
+                            <span class="badge badge-pill badge-info">Menunggu pembayaran</span>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="">Transaksi</label>
+                                <input type="text" class="form-control" value="09098972" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Dari Rekening a/n</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Sebesar</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Catatan</label><br>
+                                <textarea name="description" id="" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Bukti Transfer</label><br>
+                                <input type="file" name="image" id="">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-success">Konfirmasi
+                                Pembayaran
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
-
-
     <script src="/assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="/assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
 </body>

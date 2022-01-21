@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Checkout Success - CIShop</title>
+    <title>Orders Detail - CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
@@ -83,31 +83,69 @@
 
     <main role="main" class="container">
         <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                  <div class="card-header">
-                      Checkout Berhasil
-                  </div>
-                  <div class="card-body">
-                      <h5>Nomor Order: 09799079</h5>
-                      <p>Terima Kasih, Sudah Berbelanja</p>
-                      <p>Silahkan melakukan pembayaran untuk bisa kami proses selanjutnya dengan cara:</p>
-                      <ol>
-                          <li>Lakukan pembayaran pada rekening <strong>BCA 7089088723</strong> a/n PT.CIShop</li>
-                          <li>Sertakan Keterangan dengan nomor order: <strong>08009709</strong></li>
-                          <li>Total pembayaran: <strong>Rp 300.000,-</strong></li>
-                          <p>Jika sudah, Silahkan kirimkan bukti transfer di halaman konfirmasi atau bisa <a href="/orders-detail.html">Klik</a></p>
-                          <a href="/index.html" class="btn btn-primary"><i class="fas fa-angle-left"></i>Kembali</a>
-                      </ol>
-                  </div>
-              </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Menu
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="/profile.html">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/orders.html">Orders</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        Detail Orders #099780709
+                        <div class="float-right">
+                            <span class="badge badge-pill badge-info">Menunggu pembayaran</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Nama : Ahmad Widodo</p>
+                        <p>Telepon: 08987097090 </p>
+                        <p>Alamat: Jl. Sesama, no, 123</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produk</th>
+                                    <th class="text-center">Harga</th>
+                                    <th class="text-center">Jumlah</th>
+                                    <th class="text-center">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><img src="http://placehold.co/50x50" alt=""><strong>Produk Title</strong></p>
+                                    </td>
+                                    <td class="text-center">Rp100.000,-</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">Rp100.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><strong>Total:</strong></td>
+                                    <td class="text-center"><strong>Rp100.000,-</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/orders-confirm.html" class="btn btn-success">Konfi
+                            Pembayaran
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
-
     <script src="/assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="/assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
