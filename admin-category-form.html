@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Login - CIShop</title>
+    <title>Pengguna - CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
@@ -84,24 +84,25 @@
 
     <main role="main" class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-10 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        Login
+                        <span>Tambah Kategori</span>
                     </div>
                     <div class="card-body">
                         <form action="">
                             <div class="form-group">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" required autofocus>
-                                <small class="form-text text-danger">E-mail harus diisi</small>
+                                <label for="">Kategori</label>
+                                <input type="text" class="form-control" id="title" onkeyup="createSlug()"  required autofocus>
+                                <small class="form-text text-danger">Kategori harus diisi</small>
                             </div>
                             <div class="form-group">
-                                <label for="">Password</label>
-                                <input type="password" class="form-control" required>
-                                <small class="form-text text-danger">Password harus diisi</small>
+                                <label for="">Slug</label>
+                                <input type="text" class="form-control" id="slug" required>
+                                <small class="form-text text-danger"></small>
                             </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
                     </div>
                 </div>
@@ -112,6 +113,7 @@
 
     <script src="/assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="/assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Login - CIShop</title>
+    <title>Profile Update - CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
@@ -54,7 +54,6 @@
                             <a href="/admin-category.html" class="dropdown-item">Kategori</a>
                             <a href="/admin-product.html" class="dropdown-item">Produk</a>
                             <a href="/admin-order.html" class="dropdown-item">Order</a>
-                            <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
                         </div>
                     </li>
                 </ul>
@@ -84,34 +83,55 @@
 
     <main role="main" class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto">
-                <div class="card">
+            <div class="col-md-3">
+                <div class="card mb-3">
                     <div class="card-header">
-                        Login
+                        Menu
                     </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" required autofocus>
-                                <small class="form-text text-danger">E-mail harus diisi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Password</label>
-                                <input type="password" class="form-control" required>
-                                <small class="form-text text-danger">Password harus diisi</small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
+                    <div class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="/profile.html">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/orders.html">Orders</a>
+                        </li>
                     </div>
                 </div>
             </div>
+            <div class="col-md-9">
+               <div class="card">
+                   <div class="card-header">
+                       Formulir Profile
+                   </div>
+                   <div class="card-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Nama</label>
+                            <input type="text" class="form-control" required autofocus>
+                            <small class="form-text text-danger">Nama harus diisi</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" required>
+                            <small class="form-text text-danger">E-mail harus diisi</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" required>
+                            <small class="form-text text-danger">Password harus diisi</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Foto</label><br>
+                            <input type="file" name="foto" id="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </form>
+                   </div>
+               </div>
+            </div>
         </div>
     </main>
-
-
     <script src="/assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="/assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

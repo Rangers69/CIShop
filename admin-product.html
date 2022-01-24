@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Login - CIShop</title>
+    <title>Pengguna - CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
@@ -84,25 +84,78 @@
 
     <main role="main" class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-10 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        Login
+                        <span>Product</span>
+                        <a href="/admin-product-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+
+                        <div class="float-right">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-sm text-center" placeholder="Cari">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-info btn-sm">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <a href="#" class="btn btn-info btn-sm">
+                                            <i class="fas fa-eraser"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="card-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" required autofocus>
-                                <small class="form-text text-danger">E-mail harus diisi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Password</label>
-                                <input type="password" class="form-control" required>
-                                <small class="form-text text-danger">Password harus diisi</small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th scope="col">#</th>
+                                   <th scope="col">Produk</th>
+                                   <th scope="col">Kategori</th>
+                                   <th scope="col">Harga</th>
+                                   <th scope="col">Stok</th>
+                                   <th scope="col"></th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td>1</td>
+                                   <td>
+                                       <p>
+                                           <img src="https://placehold.co/70x70" alt="">
+                                           Laptops Core i5 2019
+                                       </p>
+                                   </td>
+                                   <td>
+                                       <span class="badge badge-primary"><i class="fas fa-tags"></i>Laptops </span>
+                                   </td>
+                                   <td>Rp 5.000.000,-</td>
+                                   <td>Tersedia</td>
+                                   <td>
+                                       <form action="">
+                                           <a href="">
+                                               <button class="btn btn-sm">
+                                                   <i class="fas fa-edit text-info"></i>
+                                               </button>
+                                           </a>
+                                           <button class="btn btn-sm" type="submit" onclick="return confirm('Are you sure?')">
+                                                <i class="fas fa-trash text-danger"></i>
+                                           </button>
+                                       </form>
+                                   </td>
+                               </tr>
+                           </tbody>
+                       </table>
+                       <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
                     </div>
                 </div>
             </div>
